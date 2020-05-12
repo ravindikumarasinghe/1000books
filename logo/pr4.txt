@@ -1,0 +1,118 @@
+<html>
+<head>
+</head>
+
+
+<style type="text/css">
+	img{
+		border-radius: 50%;
+	}
+
+	body{
+		margin:0;
+		padding: 0;
+		background-image: url(back.jpg);
+		background-size: cover;
+		font-family: sans-serif;
+
+	}
+
+	.login{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		width:350px;
+		height: 420px;
+		padding:80px 40px;
+		box-sizing: border-box;
+		background:rgba(0,0,0,.5);
+	}
+	.user{
+		width:100px;
+		height: 100px;
+		border-radius: 50%;
+		overflow: hidden;
+		position: absolute;
+		top:calc(-100px/2);
+		left:calc(50% - 50px);
+	}
+	h1{
+		margin -bottom: 50px;
+		color: #ffff99;
+		border-bottom: 8px solid #ffffcc;
+	}
+	.login p{
+		margin:0;
+		padding: 0;
+		font-weight: bold;
+		color: #fff;
+
+	}
+	.login input{
+		width:100%;
+		margin-bottom: 20px;
+	}
+
+	.login input[type="text"],
+	input[type="password"]{
+		border-bottom: 1px solid #4caf50;
+		
+		background: transparent;
+		outline: none;
+		height:40px;
+		color:#fff;
+		font-size: 18px;
+		overflow:hidden;
+	}
+	::placeholder{
+		color: #e5ccff;
+		font-size: 18px;
+	}
+	input[type="submit"]{
+		border:none;
+		outline: none;
+		height: 40px;
+		color:#fff;
+		font-size: 16px;
+		background: #4caf50 ;
+		cursor: pointer;
+		border-radius: 20px;
+	}
+	.login input[type="submit"]:hover{
+		background: #efed40;
+		color:#262626;
+	}
+	.login a{
+		color: white;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+
+
+</style>
+
+<body>
+
+<div class="login">
+	<img src="user.png" class="user">
+	<h1>Login</h1>
+	<form>
+		<p>Username</p>
+		<input type="text" name="use">
+
+		<p>Password</p>
+		<input type="password" name="pass">
+
+		<input type="submit" value="Sign in">
+
+		<a href="#">Forget Password</a>
+		
+	</form>
+</div>
+
+</body>
+
+
+</html>
