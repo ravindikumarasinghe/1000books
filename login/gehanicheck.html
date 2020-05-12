@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript">
+    function val() {
+        if(document.my.us.value == "")
+        {
+          alert("Error: Username cannot be blank!!");
+          form.us.focus();
+          return false;
+        }
+
+      var x = my.em.value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+      alert("Not a valid e-mail address");
+      form.em.focus();
+      return false;
+    }
+     
+        if(document.my.psw1.value == "")
+        {
+          alert("Error:Password cannot be blank!!");
+          form.psw1.focus();
+          return false;
+        }
+
+        if(document.my.psw1.value.length < 6 )
+          {
+            alert("Error: Password must contain at least six characters!!");
+          }
+
+          if(document.my.psw1.value != my.psw2.value)
+          {
+            alert("Error: Confirm password not match");
+          }
+
+         re = /[0-9]/;
+        if(!re.test(my.psw1.value)) {
+        alert("Error: password must contain at least one number (0-        9)!");
+        form.psw1.focus();
+        return false;
+      
+       } 
+ }
+
+      
+  </script>
+
+<style>
+
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url("bookstore-slide-2MCD-superJumbo.jpg")
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container{
+ padding:50px;
+  background-color: white;
+  width: 50%;
+  margin-left: 320px;
+}
+
+input[type=text], input[type=password], input[type=date]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid teal;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+form{
+padding:40px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<form name="my">
+ 
+  <div class="container">
+
+    <center>
+   
+      <h1>Create your <i>eBookZ</i> Account</h1>
+      <h3>buy all the books you need</h3>
+      <h6>“Today a reader, tomorrow a leader.”</h6>
+    </center>
+    
+    <hr>
+     <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="us" >
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="em" >
+
+   
+      
+     <label><b>Phone Number</b></label><br>
+    <input type="text" name="phone" placeholder="Enter your phone number"><br>
+
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw1" >
+    <h5>Input Password and Submit [7 to 15 characters which contain only characters, numeric digits]</h5>
+
+    <label><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat your Password" name="psw2" >
+    <hr>
+    <p>By creating an account you agree to our <a href="../../web/pri">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn" onclick="val()">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="../../web/sign">Sign in</a>.</p><br>
+    <a href="../../web/help">Need help?</a>
+ 
+  </div>
+
+</form>
+
+</body>
+</html>
+
