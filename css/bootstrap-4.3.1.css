@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -212,10 +213,12 @@ img {
   border-style: none;
 }
 
+
 svg {
   overflow: hidden;
   vertical-align: middle;
 }
+
 
 table {
   border-collapse: collapse;
@@ -229,23 +232,28 @@ caption {
   caption-side: bottom;
 }
 
+
 th {
   text-align: inherit;
 }
+
 
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
 
+
 button {
   border-radius: 0;
 }
+
 
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
+
 
 input,
 button,
@@ -258,6 +266,7 @@ textarea {
   line-height: inherit;
 }
 
+
 button,
 input {
   overflow: visible;
@@ -267,6 +276,7 @@ button,
 select {
   text-transform: none;
 }
+
 
 select {
   word-wrap: normal;
@@ -278,6 +288,7 @@ button,
 [type="submit"] {
   -webkit-appearance: button;
 }
+
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -294,6 +305,7 @@ button::-moz-focus-inner,
   border-style: none;
 }
 
+
 input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
@@ -307,6 +319,7 @@ input[type="month"] {
   -webkit-appearance: listbox;
 }
 
+
 textarea {
   overflow: auto;
   resize: vertical;
@@ -318,6 +331,7 @@ fieldset {
   margin: 0;
   border: 0;
 }
+
 
 legend {
   display: block;
@@ -334,6 +348,7 @@ legend {
 progress {
   vertical-align: baseline;
 }
+
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
@@ -1056,51 +1071,73 @@ pre code {
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
+	
+	
   .col-md-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
+	
+	
   .col-md-9 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
+	
+	
   .col-md-10 {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
+	
+	
   .col-md-11 {
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
+	
+	
   .col-md-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
+	
+	
   .order-md-first {
     -ms-flex-order: -1;
     order: -1;
   }
+	
+	
   .order-md-last {
     -ms-flex-order: 13;
     order: 13;
   }
+	
+	
   .order-md-0 {
     -ms-flex-order: 0;
     order: 0;
   }
+	
+	
   .order-md-1 {
     -ms-flex-order: 1;
     order: 1;
   }
+	
+	
   .order-md-2 {
     -ms-flex-order: 2;
     order: 2;
   }
+	
+	
   .order-md-3 {
     -ms-flex-order: 3;
     order: 3;
