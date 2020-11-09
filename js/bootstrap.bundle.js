@@ -21,6 +21,7 @@
     }
   }
 
+                               
   function _createClass(Constructor, protoProps, staticProps) {
     if (protoProps) _defineProperties(Constructor.prototype, protoProps);
     if (staticProps) _defineProperties(Constructor, staticProps);
@@ -67,6 +68,7 @@
     subClass.__proto__ = superClass;
   }
 
+                               
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v4.3.1): util.js
@@ -87,6 +89,7 @@
     return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
   }
 
+                               
   function getSpecialTransitionEndEvent() {
     return {
       bindType: TRANSITION_END,
@@ -101,6 +104,7 @@
     };
   }
 
+                               
   function transitionEndEmulator(duration) {
     var _this = this;
 
@@ -115,11 +119,13 @@
     }, duration);
     return this;
   }
+                               
 
   function setTransitionEndSupport() {
     $.fn.emulateTransitionEnd = transitionEndEmulator;
     $.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
   }
+                               
   /**
    * --------------------------------------------------------------------------
    * Public Util Api
