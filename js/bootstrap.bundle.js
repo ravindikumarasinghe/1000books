@@ -589,12 +589,14 @@
     wrap: 'boolean',
     touch: 'boolean'
   };
+                               
   var Direction = {
     NEXT: 'next',
     PREV: 'prev',
     LEFT: 'left',
     RIGHT: 'right'
   };
+                               
   var Event$2 = {
     SLIDE: "slide" + EVENT_KEY$2,
     SLID: "slid" + EVENT_KEY$2,
@@ -610,6 +612,7 @@
     LOAD_DATA_API: "load" + EVENT_KEY$2 + DATA_API_KEY$2,
     CLICK_DATA_API: "click" + EVENT_KEY$2 + DATA_API_KEY$2
   };
+                               
   var ClassName$2 = {
     CAROUSEL: 'carousel',
     ACTIVE: 'active',
@@ -621,6 +624,7 @@
     ITEM: 'carousel-item',
     POINTER_EVENT: 'pointer-event'
   };
+                               
   var Selector$2 = {
     ACTIVE: '.active',
     ACTIVE_ITEM: '.active.carousel-item',
@@ -631,6 +635,7 @@
     DATA_SLIDE: '[data-slide], [data-slide-to]',
     DATA_RIDE: '[data-ride="carousel"]'
   };
+                               
   var PointerType = {
     TOUCH: 'touch',
     PEN: 'pen'
@@ -1170,10 +1175,12 @@
     toggle: true,
     parent: ''
   };
+                               
   var DefaultType$1 = {
     toggle: 'boolean',
     parent: '(string|element)'
   };
+                               
   var Event$3 = {
     SHOW: "show" + EVENT_KEY$3,
     SHOWN: "shown" + EVENT_KEY$3,
@@ -1181,6 +1188,7 @@
     HIDDEN: "hidden" + EVENT_KEY$3,
     CLICK_DATA_API: "click" + EVENT_KEY$3 + DATA_API_KEY$3
   };
+                               
   var ClassName$3 = {
     SHOW: 'show',
     COLLAPSE: 'collapse',
